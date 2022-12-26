@@ -7,6 +7,26 @@
   pointer-events: none;
 }
 
+button {
+  margin-left: 20px;
+}
+
+.App {
+  background-color: #282c34;
+}
+
+.blue {
+  background-color: #0984e3;
+}
+
+.red {
+  background-color: #d63031;
+}
+
+.green {
+  background-color: #00b894;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -14,7 +34,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  text-align: center;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

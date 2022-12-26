@@ -1,16 +1,24 @@
-import logo from './logo.png';
+import { useState } from 'react';
 import './App.css';
-import Todo from './Todo';
-
-import {useEffect, useState} from 'react'
-
+import Time from './Time';
 
 const App = () => {
+    const [color, setColor] = useState('App');
+
+    const today = function () {
+        return new Date().toISOString();
+    };
+
+    const onChangeBackground = function (params) {
+        setColor(params);
+    };
+
     return (
-      <div>
-          <Todo/>
+      <div className={color}>
+          <header className="App-header">
+              <Time today={today()} onChangeBackground={onChangeBackground} />
+          </header>
       </div>
     );
 }
-
 export default App;
